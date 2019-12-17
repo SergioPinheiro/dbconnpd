@@ -33,7 +33,7 @@ class DBConnect:
             print("Falha ao receber dados: " + str(ex))
             return None 
     
-    def set_Dataframe(self, tableName, dataframe, chunksize='auto', if_exists='replace'):
+    def set_DataFrame(self, tableName, dataframe, chunksize='auto', if_exists='replace'):
         if not self.connection:
             self.connect()
         try:
